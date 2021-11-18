@@ -39,7 +39,9 @@ header p{
 nav{
     overflow: hidden;
     background-color: #000000;
-    width:auto
+    width:auto;
+    display: flex;
+    justify-content: center;
   }
 .nav>li{
     display: inline-block;
