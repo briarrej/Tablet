@@ -12,7 +12,7 @@ header{
     font-size: 40px;
     font-weight: bold;
     line-height: 1;
-    padding: 50px 0;
+    padding: 50px;
     text-align: center;
     background-image: url("../images/skyline.jpeg");
     background-attachment: fixed; /* Parallax effect */
@@ -26,7 +26,7 @@ h1{
     background-color:#ffffff;
     width: auto;
     border: 10px solid #000079;
-    padding: 0px;
+    padding: 5px;
     margin: 20px;}
 
 header p{
@@ -61,11 +61,12 @@ nav a:hover {
   }
 
 nav .current {
-    background-color: #ff0000;
-    color: #000000;
+    background-color: rgb(129, 0, 0);
+    color: #ffffff;
     font-style: italic;
     text-decoration:underline;
     font-size: 20;
+    font-weight:900;
 }
 .skip a{
     background: white;
@@ -84,7 +85,7 @@ header p{
     color: #000000;
     font-size: 18px;
 }
-.M3 h2{
+h2{
     color: #ffffff;
     font-size: 20px;
     font-weight: 200;
@@ -339,7 +340,105 @@ footer{
 #my_image{
     margin: auto;
 }
-/*.header-img{
+
+@media screen and (min-width:750px){
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #000079;
+        color: #ffffff;
+    }
+      
+    li {
+        display: inline;
+        float: left;}
+      
+    li a {
+        display: block;
+        width: auto;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        display: flex;  
+      }
+      
+      /* Change the link color to #111 (black) on hover */
+    li a:hover {
+        background-color: #111;}
+    nav{
+        width:100%;
+        color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .M3 {
+        
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+        grid-gap: 20px;
+        /*grid-column: 1/ -1;
+        grid-row: 4/auto;
+        grid-gap: 20px;*/
+        
+       
+        
+        
+    }
+    #m3-main{
+        display: grid;
+        grid-column: 1/ span 1;
+        grid-row: 5/auto;}
+
+    .M3 p{
+        width: fit-content;
+        display: grid;
+        grid-column: 1/ 1;
+        grid-row: 1/2;
+    }
+    .gallery{
+        display: grid;
+        justify-content: center;
+    }
+    #gallery{
+        display: grid;
+        justify-content: center;
+    }
+    #images{
+        min-width: 70%;
+        min-height: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+        grid-gap: 20px;
+
+        justify-content: center;
+
+
+        /*display:flex;
+        flex-direction: column; 
+        flex-wrap: nowrap;
+        justify-content: center;*/
+    }
+
+}
+
+
+
+/*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    }
+*.header-img{
     grid-column: 1/ -1;
     grid-row: 2/auto;
     max-height: 700px;
